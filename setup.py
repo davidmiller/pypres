@@ -9,7 +9,6 @@ mo = re.search(VSRE,  verstrline, re.M)
 if mo:
     VERSION = mo.group(1)
 else:
-    print verstrline
     raise RuntimeError("Unable to find version string in {0}".format(VERSION_FILE))
 
 LONG_DESC = """
@@ -29,6 +28,15 @@ setup(
         "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
         "Operating System :: OS Independent",
         "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.0",
+        "Programming Language :: Python :: 3.1",
+        "Programming Language :: Python :: 3.2",
+        "Programming Language :: Python :: 3.3",
+        "Topic :: Communications",
+        "Topic :: Education",
+        "Topic :: Office/Business",
+        "Topic :: Utilities"
         ],
     packages = ['pypres'],
     install_requires = []

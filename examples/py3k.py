@@ -178,14 +178,6 @@ Now However...
 price = '\u00A3 2.99' + b' cheap'
 #--newslide
 """
-Quotes:
-
-'This value-specific behavior has caused numerous sad faces over the years.'
-
--Guido van Rossum February 14, 2009
-"""
-#--newslide
-"""
 
 Now you have to convert bytes to Unicode if you want to deal with them like text
 
@@ -195,6 +187,14 @@ Now you have to convert bytes to Unicode if you want to deal with them like text
 comment = b' cheap'
 price = '\u00A3 2.99' + comment.decode()
 print(price)
+#--newslide
+"""
+Quotes:
+
+'This value-specific behavior has caused numerous sad faces over the years.'
+
+-Guido van Rossum February 14, 2009
+"""
 #--newslide
 """
 

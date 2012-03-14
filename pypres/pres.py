@@ -4,6 +4,7 @@ A presentation about Python!
 import code
 import os
 import sys
+import time
 
 class PresentConsole(code.InteractiveConsole):
     """
@@ -36,6 +37,7 @@ class PresentConsole(code.InteractiveConsole):
         stripped = slide[7:].strip()
         for x in stripped.split("\n"):
             print(sys.ps1 + x)
+            time.sleep(0.2)
             super(PresentConsole, self).push(x)
         return
 

@@ -37,7 +37,7 @@ class PresentConsole(code.InteractiveConsole):
         stripped = slide[7:].strip()
         for x in stripped.split("\n"):
             print(sys.ps1 + x)
-            time.sleep(0.2)
+            time.sleep(0.1)
             super(PresentConsole, self).push(x)
         return
 
